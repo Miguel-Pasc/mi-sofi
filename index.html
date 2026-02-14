@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Para Ti ❤️</title>
+    <title>Bu ❤️</title>
     <style>
         body {
             margin: 0;
@@ -101,6 +101,10 @@
 </head>
 
 <body>
+    <div class="mensaje">
+        <h2>Buenos días mi princesa hermosa.</h2>
+        <p>(Puedes reproducir el video plis.)</p>
+    </div>
 
     <div class="video-container">
         <video id="video" controls autoplay playsinline>
@@ -112,18 +116,10 @@
         <span class="icon-play">▶</span>
     </button>
 
-    <div class="mensaje">
-        <h2>Un pequeño detalle para ti...</h2>
-        <p>Espero que te guste tanto como a mí me gustas tú.</p>
-    </div>
 
     <script>
         const miVideo = document.querySelector('video');
         const miBoton = document.getElementById('btn-iniciar');
-
-        // miVideo.onended = function () {
-        //     miBoton.style.display = 'block'; // Muestra el botón cuando el video acaba
-        // };
 
         miVideo.ontimeupdate = function () {
             if (miVideo.currentTime >= 30) { // Cambia 30 por el segundo que quieras

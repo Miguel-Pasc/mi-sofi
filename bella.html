@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Rosa Encantada</title>
+    <title>Mi princesa</title>
     <style>
         body {
             margin: 0;
@@ -130,16 +130,7 @@
             /* Por encima de la rosa */
         }
 
-        .frase-cayendo {
-            /* position: absolute;
-            color: rgba(255, 255, 255, 0.8);
-            font-family: 'Georgia', serif;
-            font-size: 14px;
-            font-style: italic;
-            white-space: nowrap;
-            text-shadow: 0 0 5px rgba(255, 0, 85, 0.5);
-            user-select: none;
-            animation: caer linear forwards; */
+        .frase-cayendo {         
 
             position: absolute;
             color: white;
@@ -202,12 +193,7 @@
         </div>
 
         <div class="base"></div>
-    </div>
-
-    <div class="mensaje">
-        <h2>Mi amor por ti es eterno...</h2>
-        <p>Feliz San Valentín, mi Bella. ❤️</p>
-    </div>
+    </div>    
 
     <script>
         const musica = document.getElementById('musica-fondo');
@@ -218,54 +204,25 @@
             musica.play().catch(error => {
                 console.log("El navegador bloqueó el autoplay. Se requiere interacción.");
             });
-        });
-
-        // Mostrar botón cuando la música termine
-        // musica.onended = function () {
-        //     boton.style.display = 'block';
-        // };
+        });        
 
 
         const frases = [
-            "Eres mi persona favorita",
-            "Te amo más que ayer",
-            "Eres mi cuento de hadas",
-            "Siempre juntos",
-            "Mi Bella",
-            "Un amor eterno",
-            "Contigo todo es mágico"
+            "Mi niña",
+            "Te amo como no lo imaginas",
+            "Eres mi princesa",
+            "Corazón de melón",
+            "Gracias por todo mi vida",
+            "El día de hoy te ves hermosa, al igual que ayer y anteayer y ante anteayer y siempre cariño",
+            "Me haces tan feliz",
+            "Que bonito es existir a tu lado",
+            "Me encanta oir cada uno de tus temas de conversación",
+            "Besitos",
+            "Quisiera estar contigo para abrazarte",
+            "Te extraño mi amor"
         ];
 
-        // function crearFrase() {
-        //     const contenedor = document.getElementById('contenedor-frases');
-        //     const span = document.createElement('span');
-
-        //     // Elegir frase aleatoria
-        //     span.innerText = frases[Math.floor(Math.random() * frases.length)];
-        //     span.classList.add('frase-cayendo');
-
-        //     // Posición horizontal aleatoria (0 a 90%)
-        //     span.style.left = Math.random() * 90 + '%';
-
-        //     // Duración de caída aleatoria (entre 5 y 10 segundos)
-        //     const duracion = Math.random() * 5 + 5;
-        //     span.style.animationDuration = duracion + 's';
-
-        //     // Tamaño de letra aleatorio para dar profundidad
-        //     span.style.fontSize = Math.random() * (18 - 12) + 12 + 'px';
-
-        //     contenedor.appendChild(span);
-
-        //     // Borrar el elemento cuando termine la animación para no saturar el celular
-        //     setTimeout(() => {
-        //         span.remove();
-        //     }, duracion * 1000);
-        // }
-
-        // // Crear una frase nueva cada 2 segundos
-        // setInterval(crearFrase, 2000);
-
-
+  
         const contenedor = document.getElementById('contenedor-frases');
         // const musica = document.getElementById('musica-fondo');
 
@@ -288,7 +245,7 @@
         }
 
         // Frecuencia: Una frase cada 800 milisegundos (antes eran 2000)
-        setInterval(crearFrase, 800);
+        setInterval(crearFrase, 1000);
 
         // --- CÓDIGO PARA CORTAR EL AUDIO ---
         // Ejemplo: Cortar a los 30 segundos exactos
